@@ -1,0 +1,154 @@
+@import "../csss/heder.css";
+@import "../csss/aside.css";
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--aside-color);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar {
+  height: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  background-color: var(--aside-color);
+  border-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+main,
+header {
+  left: var(--aside-width);
+  width: calc(100vw - var(--aside-width));
+  transition: 0.5s;
+}
+
+main {
+  position: relative;
+  top: 80px;
+  background-color: var(--panel-color);
+  height: calc(140vh - 85px);
+  overflow: auto;
+}
+
+.but {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.but button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  background-color: #eef2f5;
+}
+
+.but button:hover {
+  background-color: #10cd45;
+}
+
+.tex {
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #dfe0eb;
+  padding: 10px 0px 0px 40px;
+  margin: 0px 50px 0px 50px;
+  width: 100%;
+}
+thead {
+  border: 1px solid #dfe0eb;
+  text-align: left;
+  font-size: 25px;
+}
+tbody {
+  border: 1px solid #dfe0eb;
+}
+
+th,
+td {
+  padding: 15px 20px;
+
+}
+tr {
+  border: 1px solid #dfe0eb;
+}
+
+.im {
+  display: flex;
+}
+.im img {
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* class */
+
+.q span {
+  background-color: red;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+.y span {
+  background-color: #fec400;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 15px;
+}
+
+.k span {
+  background-color: #29cc97;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 15px;
+}
+
+@media (max-width: 400px) {
+  nav ~ main {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .but {
+    gap: 10px;
+  }
+  .but h1 {
+    font-size: 20px;
+  }
+}

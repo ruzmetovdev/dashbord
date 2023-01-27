@@ -1,0 +1,43 @@
+.close {
+  width: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 85px;
+  width: 100%;
+  background-color:var(--panel-color);
+  z-index: 2;
+}
+
+.hamburger {
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+}
+.img h3 {
+  position: absolute;
+  top: 25px;
+  right: 90px;
+}
+
+header img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+:root {
+  --asithov-color:#9FA2B4;
+  --aside-color: #363740;
+  --conten-color: #a4a6b3;
+  --panel-color: #fff;
+  --black-light-color: #707070;
+  --border-color: #dfe0eb;
+  --toggle-color: #ddd;
+  --aside-width: 199px;
+}
